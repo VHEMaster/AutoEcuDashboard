@@ -6,17 +6,71 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_GYG9" Alignment="Left" TypographyId="Typography_00">
+      <Text Id="__SingleUse_KEKX" Alignment="Left" TypographyId="Arial_20">
+        <Translation Language="GB">+0.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_LGVI" Alignment="Center" TypographyId="Arial_90">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_FZ1R" Alignment="Center" TypographyId="Arial_20">
+        <Translation Language="GB">Manifold Pressure</Translation>
+      </Text>
+      <Text Id="__SingleUse_UYUQ" Alignment="Left" TypographyId="Arial_90">
+        <Translation Language="GB">0.00</Translation>
+      </Text>
+      <Text Id="__SingleUse_76NL" Alignment="Center" TypographyId="Arial_90">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_DU81" Alignment="Center" TypographyId="Arial_20">
+        <Translation Language="GB">Oil Pressure</Translation>
+      </Text>
+      <Text Id="__SingleUse_D2T8" Alignment="Left" TypographyId="Arial_90">
+        <Translation Language="GB">00.0L</Translation>
+      </Text>
+      <Text Id="__SingleUse_3XOU" Alignment="Center" TypographyId="Arial_90">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_OKU7" Alignment="Center" TypographyId="Arial_20">
+        <Translation Language="GB">Fuel Level</Translation>
+      </Text>
+      <Text Id="__SingleUse_FG90" Alignment="Left" TypographyId="Arial_90">
+        <Translation Language="GB">000.0°</Translation>
+      </Text>
+      <Text Id="__SingleUse_AJMM" Alignment="Center" TypographyId="Arial_90">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_X4C1" Alignment="Center" TypographyId="Arial_20">
+        <Translation Language="GB">Coolant Temperature</Translation>
+      </Text>
+      <Text Id="__SingleUse_BW06" Alignment="Left" TypographyId="Arial_90">
+        <Translation Language="GB">000.0°</Translation>
+      </Text>
+      <Text Id="__SingleUse_A0B8" Alignment="Center" TypographyId="Arial_90">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_5S57" Alignment="Center" TypographyId="Arial_20">
+        <Translation Language="GB">Oil Temperature</Translation>
+      </Text>
+      <Text Id="__SingleUse_K7VE" Alignment="Center" TypographyId="Arial_20">
+        <Translation Language="GB">AFR</Translation>
+      </Text>
+      <Text Id="__SingleUse_HL8B" Alignment="Left" TypographyId="Arial_90">
         <Translation Language="GB">00.0</Translation>
       </Text>
-      <Text Id="__SingleUse_YDJA" Alignment="Left" TypographyId="Typography_00">
+      <Text Id="__SingleUse_AAIB" Alignment="Center" TypographyId="Arial_90">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_GYG9" Alignment="Left" TypographyId="Arial_50">
+        <Translation Language="GB">00.0</Translation>
+      </Text>
+      <Text Id="__SingleUse_YDJA" Alignment="Left" TypographyId="Arial_50">
         <Translation Language="GB">FPS: &lt;value&gt;</Translation>
       </Text>
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,A-Z,a-z,0x20-0xFE" />
-    <Typography Id="Typography_00" Font="swissek.ttf" Size="50" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,A-Z,a-z,0x20-0xFE" />
+    <Typography Id="Arial_50" Font="ariblk.ttf" Size="50" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,A-Z,a-z,0x20-0xFE" />
+    <Typography Id="Arial_90" Font="ariblk.ttf" Size="90" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,A-Z,a-z,0x20-0xFE" />
+    <Typography Id="Arial_20" Font="ariblk.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,A-Z,a-z,0x20-0xFE" />
   </Typographies>
 </TextDatabase>

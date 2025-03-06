@@ -144,8 +144,8 @@
           {
             "Type": "Image",
             "Name": "imageOilTemp",
-            "X": 52,
-            "Y": 250,
+            "X": 60,
+            "Y": 239,
             "Width": 65,
             "Height": 57,
             "RelativeFilename": "oil_temperature_blue.png"
@@ -178,35 +178,16 @@
             "RelativeFilename": "coolant_temperature_red.png"
           },
           {
-            "Type": "TextArea",
-            "Name": "textFPS",
-            "X": 351,
-            "Y": 28,
-            "Width": 375,
-            "Height": 72,
-            "TextId": "__SingleUse_YDJA",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Wildcard1": {
-              "TextId": "__SingleUse_GYG9",
-              "UseBuffer": true,
-              "BufferSize": 32
-            }
-          },
-          {
             "Type": "Gauge",
             "Name": "gaugeManifoldPressure",
-            "X": 1559,
+            "X": 1539,
             "Y": 261,
-            "Width": 266,
+            "Width": 306,
             "Height": 188,
             "FileNameBackground": "OILPRESS_10_shutterstock_2529382583.png",
+            "BackgroundOffsetX": 20.0,
             "BackgroundOffsetY": 10.0,
-            "RotationCenterX": 133.0,
+            "RotationCenterX": 153.0,
             "RotationCenterY": 143.0,
             "StartAngle": -80.6,
             "EndAngle": 81.3,
@@ -312,13 +293,14 @@
           {
             "Type": "Gauge",
             "Name": "gaugeOilTemp",
-            "X": 95,
+            "X": 75,
             "Y": 261,
-            "Width": 266,
+            "Width": 306,
             "Height": 188,
             "FileNameBackground": "OILTEMP_10_shutterstock_2529382583.png",
+            "BackgroundOffsetX": 20.0,
             "BackgroundOffsetY": 10.0,
-            "RotationCenterX": 133.0,
+            "RotationCenterX": 153.0,
             "RotationCenterY": 143.0,
             "StartAngle": -80.6,
             "EndAngle": 81.3,
@@ -422,6 +404,236 @@
               "Blue": 197
             },
             "ArcCapStyle": "Butt"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAFRValue",
+            "X": 45,
+            "Y": 91,
+            "Width": 306,
+            "Height": 104,
+            "TextId": "__SingleUse_AAIB",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_HL8B",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAFRTitle",
+            "X": 45,
+            "Y": 195,
+            "Width": 306,
+            "Height": 52,
+            "TextId": "__SingleUse_K7VE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textCoolantTempValue",
+            "X": 65,
+            "Y": 516,
+            "Width": 320,
+            "Height": 104,
+            "TextId": "__SingleUse_AJMM",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_FG90",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textCoolantTempTitle",
+            "X": 65,
+            "Y": 620,
+            "Width": 320,
+            "Height": 53,
+            "TextId": "__SingleUse_X4C1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOilTempValue",
+            "X": 75,
+            "Y": 308,
+            "Width": 306,
+            "Height": 104,
+            "TextId": "__SingleUse_A0B8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_BW06",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOilTempTitle",
+            "X": 75,
+            "Y": 412,
+            "Width": 306,
+            "Height": 36,
+            "TextId": "__SingleUse_5S57",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textFuelLevelValue",
+            "X": 1535,
+            "Y": 517,
+            "Width": 320,
+            "Height": 104,
+            "TextId": "__SingleUse_3XOU",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_D2T8",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textFuelLevelTitle",
+            "X": 1535,
+            "Y": 621,
+            "Width": 320,
+            "Height": 52,
+            "TextId": "__SingleUse_OKU7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOilPressureValue",
+            "X": 1539,
+            "Y": 308,
+            "Width": 306,
+            "Height": 104,
+            "TextId": "__SingleUse_76NL",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_UYUQ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textOilPressureTitle",
+            "X": 1539,
+            "Y": 412,
+            "Width": 306,
+            "Height": 37,
+            "TextId": "__SingleUse_DU81",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textManifoldPressureValue",
+            "X": 1569,
+            "Y": 91,
+            "Width": 306,
+            "Height": 104,
+            "TextId": "__SingleUse_LGVI",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_KEKX",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textManifoldPressureTitle",
+            "X": 1569,
+            "Y": 195,
+            "Width": 306,
+            "Height": 52,
+            "TextId": "__SingleUse_FZ1R",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textFPS",
+            "X": 351,
+            "Y": 28,
+            "Width": 308,
+            "Height": 72,
+            "TextId": "__SingleUse_YDJA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_GYG9",
+              "UseBuffer": true,
+              "BufferSize": 32
+            }
           }
         ],
         "Interactions": [

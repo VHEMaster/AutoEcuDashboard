@@ -10,6 +10,24 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    7, // T___SINGLEUSE_GYG9: "placeholder"
-    0  // T___SINGLEUSE_YDJA: "FPS: <>"
+    92,  // T___SINGLEUSE_KEKX: "+0.00"
+    59,  // T___SINGLEUSE_LGVI: "<>"
+    20,  // T___SINGLEUSE_FZ1R: "Manifold Pressure"
+    93,  // T___SINGLEUSE_UYUQ: "0.00"
+    59,  // T___SINGLEUSE_76NL: "<>"
+    61,  // T___SINGLEUSE_DU81: "Oil Pressure"
+    98,  // T___SINGLEUSE_D2T8: "00.0L"
+    59,  // T___SINGLEUSE_3XOU: "<>"
+    74,  // T___SINGLEUSE_OKU7: "Fuel Level"
+    85,  // T___SINGLEUSE_FG90: "000.0?"
+    59,  // T___SINGLEUSE_AJMM: "<>"
+    0,   // T___SINGLEUSE_X4C1: "Coolant Temperature"
+    85,  // T___SINGLEUSE_BW06: "000.0?"
+    59,  // T___SINGLEUSE_A0B8: "<>"
+    38,  // T___SINGLEUSE_5S57: "Oil Temperature"
+    109, // T___SINGLEUSE_K7VE: "AFR"
+    104, // T___SINGLEUSE_HL8B: "00.0"
+    59,  // T___SINGLEUSE_AAIB: "<>"
+    104, // T___SINGLEUSE_GYG9: "00.0"
+    54   // T___SINGLEUSE_YDJA: "FPS: <>"
 };

@@ -9,14 +9,14 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
 {
     switch (typography)
     {
-    case Typography::DEFAULT:
-        // verdana_20_4bpp
+    case Typography::ARIAL_50:
+        // ariblk_50_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
-    case Typography::LARGE:
-        // verdana_40_4bpp
+    case Typography::ARIAL_90:
+        // ariblk_90_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
-    case Typography::TYPOGRAPHY_00:
-        // swissek_50_4bpp
+    case Typography::ARIAL_20:
+        // ariblk_20_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
     default:
         return 0;

@@ -80,7 +80,7 @@ SECTIONS
 
   __tgfx_extflash_loadaddr = LOADADDR(TouchGfxExternalSection);
   
-	TouchGfxExternalSection (NOLOAD) :
+	TouchGfxExternalSection :
 	{
     . = ALIGN(0x4);
 		__tgfx_extflash_start = .;

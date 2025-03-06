@@ -9,8 +9,9 @@
 #include <gui/screen_screen/screenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/Gauge.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class screenViewBase : public touchgfx::View<screenPresenter>
 {
@@ -56,7 +57,6 @@ protected:
     touchgfx::Image imageOilTempHigh;
     touchgfx::Image imageCoolantTemp;
     touchgfx::Image imageCoolantTempHigh;
-    touchgfx::TextAreaWithOneWildcard textFPS;
     touchgfx::Gauge gaugeManifoldPressure;
     touchgfx::Gauge gaugeSpeedMeter;
     touchgfx::Gauge gaugeFuelLevel;
@@ -65,10 +65,35 @@ protected:
     touchgfx::Gauge gaugeOilPress;
     touchgfx::Gauge gaugeAFR;
     touchgfx::Gauge gaugeTachometer;
+    touchgfx::TextAreaWithOneWildcard textAFRValue;
+    touchgfx::TextArea textAFRTitle;
+    touchgfx::TextAreaWithOneWildcard textCoolantTempValue;
+    touchgfx::TextArea textCoolantTempTitle;
+    touchgfx::TextAreaWithOneWildcard textOilTempValue;
+    touchgfx::TextArea textOilTempTitle;
+    touchgfx::TextAreaWithOneWildcard textFuelLevelValue;
+    touchgfx::TextArea textFuelLevelTitle;
+    touchgfx::TextAreaWithOneWildcard textOilPressureValue;
+    touchgfx::TextArea textOilPressureTitle;
+    touchgfx::TextAreaWithOneWildcard textManifoldPressureValue;
+    touchgfx::TextArea textManifoldPressureTitle;
+    touchgfx::TextAreaWithOneWildcard textFPS;
 
     /*
      * Wildcard Buffers
      */
+    static const uint16_t TEXTAFRVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textAFRValueBuffer[TEXTAFRVALUE_SIZE];
+    static const uint16_t TEXTCOOLANTTEMPVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textCoolantTempValueBuffer[TEXTCOOLANTTEMPVALUE_SIZE];
+    static const uint16_t TEXTOILTEMPVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textOilTempValueBuffer[TEXTOILTEMPVALUE_SIZE];
+    static const uint16_t TEXTFUELLEVELVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textFuelLevelValueBuffer[TEXTFUELLEVELVALUE_SIZE];
+    static const uint16_t TEXTOILPRESSUREVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textOilPressureValueBuffer[TEXTOILPRESSUREVALUE_SIZE];
+    static const uint16_t TEXTMANIFOLDPRESSUREVALUE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textManifoldPressureValueBuffer[TEXTMANIFOLDPRESSUREVALUE_SIZE];
     static const uint16_t TEXTFPS_SIZE = 32;
     touchgfx::Unicode::UnicodeChar textFPSBuffer[TEXTFPS_SIZE];
 
