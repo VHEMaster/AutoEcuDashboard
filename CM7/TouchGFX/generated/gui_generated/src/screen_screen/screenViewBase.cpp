@@ -74,7 +74,7 @@ screenViewBase::screenViewBase()
     imageCheckEngine.setBitmap(touchgfx::Bitmap(BITMAP_CHECKENGINE_ON_ID));
     add(imageCheckEngine);
 
-    imageOilTemp.setXY(52, 244);
+    imageOilTemp.setXY(52, 250);
     imageOilTemp.setBitmap(touchgfx::Bitmap(BITMAP_OIL_TEMPERATURE_BLUE_ID));
     add(imageOilTemp);
 
@@ -100,7 +100,7 @@ screenViewBase::screenViewBase()
 
     gaugeManifoldPressure.setBackground(touchgfx::Bitmap(BITMAP_OILPRESS_10_SHUTTERSTOCK_2529382583_ID));
     gaugeManifoldPressure.setBackgroundOffset(0, 10);
-    gaugeManifoldPressure.setPosition(1559, 255, 266, 188);
+    gaugeManifoldPressure.setPosition(1559, 261, 266, 188);
     gaugeManifoldPressure.setCenter(133, 143);
     gaugeManifoldPressure.setStartEndAngle(-80.6f, 81.3f);
     gaugeManifoldPressure.setRange(0, 1000);
@@ -148,7 +148,7 @@ screenViewBase::screenViewBase()
 
     gaugeOilTemp.setBackground(touchgfx::Bitmap(BITMAP_OILTEMP_10_SHUTTERSTOCK_2529382583_ID));
     gaugeOilTemp.setBackgroundOffset(0, 10);
-    gaugeOilTemp.setPosition(95, 255, 266, 188);
+    gaugeOilTemp.setPosition(95, 261, 266, 188);
     gaugeOilTemp.setCenter(133, 143);
     gaugeOilTemp.setStartEndAngle(-80.6f, 81.3f);
     gaugeOilTemp.setRange(0, 1000);
@@ -173,7 +173,7 @@ screenViewBase::screenViewBase()
     gaugeAFR.setBackground(touchgfx::Bitmap(BITMAP_AFR_REL_10_ID));
     gaugeAFR.setBackgroundOffset(20, 18);
     gaugeAFR.setPosition(45, 57, 306, 190);
-    gaugeAFR.setCenter(153, 153);
+    gaugeAFR.setCenter(153.0f, 151.5f);
     gaugeAFR.setStartEndAngle(-80.6f, 81.3f);
     gaugeAFR.setRange(0, 1000);
     gaugeAFR.setValue(0);
