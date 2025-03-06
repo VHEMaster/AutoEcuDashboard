@@ -383,7 +383,7 @@ Error_Handler();
    * 30 - maximum
    */
 
-  htim14.Instance->CCR1 = 60;
+  htim14.Instance->CCR1 = 70;
   HAL_TIM_PWM_Start(&htim14, TIM_CHANNEL_1);
 
   HAL_Delay(100);

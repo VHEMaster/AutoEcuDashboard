@@ -12,6 +12,10 @@ screenViewBase::screenViewBase()
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
+    imageTurbo.setXY(1479, 173);
+    imageTurbo.setBitmap(touchgfx::Bitmap(BITMAP_TURBO_RED_ID));
+    add(imageTurbo);
+
     imageShiftUp.setXY(915, 175);
     imageShiftUp.setBitmap(touchgfx::Bitmap(BITMAP_SHIFT_GREEN_ID));
     add(imageShiftUp);
@@ -20,15 +24,15 @@ screenViewBase::screenViewBase()
     imageTraction.setBitmap(touchgfx::Bitmap(BITMAP_TRACTION_ON_ID));
     add(imageTraction);
 
-    imageABS.setXY(1212, 619);
+    imageABS.setXY(1295, 615);
     imageABS.setBitmap(touchgfx::Bitmap(BITMAP_ABS_ON_ID));
     add(imageABS);
 
-    imageHandBrake.setXY(1115, 619);
+    imageHandBrake.setXY(1115, 616);
     imageHandBrake.setBitmap(touchgfx::Bitmap(BITMAP_HANDBRAKE_ON_ID));
     add(imageHandBrake);
 
-    imageBrake.setXY(1115, 619);
+    imageBrake.setXY(1115, 616);
     imageBrake.setBitmap(touchgfx::Bitmap(BITMAP_BRAKE_ON_ID));
     imageBrake.setVisible(false);
     add(imageBrake);
@@ -42,7 +46,7 @@ screenViewBase::screenViewBase()
     imageLowBeam.setBitmap(touchgfx::Bitmap(BITMAP_LOW_BEAM_ON_ID));
     add(imageLowBeam);
 
-    imageFuel.setXY(1825, 443);
+    imageFuel.setXY(1835, 475);
     imageFuel.setBitmap(touchgfx::Bitmap(BITMAP_FUEL_ON_ID));
     add(imageFuel);
 
@@ -58,11 +62,11 @@ screenViewBase::screenViewBase()
     imageTurnLeft.setBitmap(touchgfx::Bitmap(BITMAP_LEFT_TURN_ON_ID));
     add(imageTurnLeft);
 
-    imageOilPressure.setXY(717, 630);
+    imageOilPressure.setXY(1135, 160);
     imageOilPressure.setBitmap(touchgfx::Bitmap(BITMAP_OIL_PRESSURE_ON_ID));
     add(imageOilPressure);
 
-    imageBatteryCharge.setXY(1307, 625);
+    imageBatteryCharge.setXY(1043, 173);
     imageBatteryCharge.setBitmap(touchgfx::Bitmap(BITMAP_BATTERY_ON_ID));
     add(imageBatteryCharge);
 
@@ -70,15 +74,23 @@ screenViewBase::screenViewBase()
     imageCheckEngine.setBitmap(touchgfx::Bitmap(BITMAP_CHECKENGINE_ON_ID));
     add(imageCheckEngine);
 
-    imageOilTemp.setXY(53, 232);
+    imageOilTemp.setXY(52, 244);
     imageOilTemp.setBitmap(touchgfx::Bitmap(BITMAP_OIL_TEMPERATURE_BLUE_ID));
     add(imageOilTemp);
 
-    imageCoolantTemp.setXY(49, 436);
+    imageOilTempHigh.setXY(810, 167);
+    imageOilTempHigh.setBitmap(touchgfx::Bitmap(BITMAP_OIL_TEMPERATURE_RED_ID));
+    add(imageOilTempHigh);
+
+    imageCoolantTemp.setXY(48, 439);
     imageCoolantTemp.setBitmap(touchgfx::Bitmap(BITMAP_COOLANT_TEMPERATURE_BLUE_ID));
     add(imageCoolantTemp);
 
-    textFPS.setPosition(45, 31, 439, 72);
+    imageCoolantTempHigh.setXY(715, 149);
+    imageCoolantTempHigh.setBitmap(touchgfx::Bitmap(BITMAP_COOLANT_TEMPERATURE_RED_ID));
+    add(imageCoolantTempHigh);
+
+    textFPS.setPosition(351, 28, 375, 72);
     textFPS.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textFPS.setLinespacing(0);
     Unicode::snprintf(textFPSBuffer, TEXTFPS_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_GYG9).getText());
@@ -91,7 +103,7 @@ screenViewBase::screenViewBase()
     gaugeManifoldPressure.setPosition(1559, 255, 266, 188);
     gaugeManifoldPressure.setCenter(133, 143);
     gaugeManifoldPressure.setStartEndAngle(-80.6f, 81.3f);
-    gaugeManifoldPressure.setRange(0, 100);
+    gaugeManifoldPressure.setRange(0, 1000);
     gaugeManifoldPressure.setValue(0);
     gaugeManifoldPressure.setNeedle(BITMAP_NEEDLE_SMALL_10_SHUTTERSTOCK_2529382583_ID, 21, 127);
     gaugeManifoldPressure.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);
@@ -103,7 +115,7 @@ screenViewBase::screenViewBase()
     gaugeSpeedMeter.setPosition(980, 207, 540, 440);
     gaugeSpeedMeter.setCenter(270, 290);
     gaugeSpeedMeter.setStartEndAngle(-119.7f, 120.3f);
-    gaugeSpeedMeter.setRange(0, 100);
+    gaugeSpeedMeter.setRange(0, 1000);
     gaugeSpeedMeter.setValue(0);
     gaugeSpeedMeter.setNeedle(BITMAP_NEEDLE_BIG_SHUTTERSTOCK_2529382583_ID, 42, 252);
     gaugeSpeedMeter.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);
@@ -115,7 +127,7 @@ screenViewBase::screenViewBase()
     gaugeFuelLevel.setPosition(1535, 448, 320, 225);
     gaugeFuelLevel.setCenter(160, 180);
     gaugeFuelLevel.setStartEndAngle(-80.6f, 81.3f);
-    gaugeFuelLevel.setRange(0, 100);
+    gaugeFuelLevel.setRange(0, 1000);
     gaugeFuelLevel.setValue(0);
     gaugeFuelLevel.setNeedle(BITMAP_NEEDLE_SMALL_SHUTTERSTOCK_2529382583_ID, 25, 154);
     gaugeFuelLevel.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);
@@ -127,7 +139,7 @@ screenViewBase::screenViewBase()
     gaugeCoolantTemp.setPosition(65, 448, 320, 225);
     gaugeCoolantTemp.setCenter(160, 180);
     gaugeCoolantTemp.setStartEndAngle(-80.6f, 81.3f);
-    gaugeCoolantTemp.setRange(0, 100);
+    gaugeCoolantTemp.setRange(0, 1000);
     gaugeCoolantTemp.setValue(0);
     gaugeCoolantTemp.setNeedle(BITMAP_NEEDLE_SMALL_SHUTTERSTOCK_2529382583_ID, 25, 154);
     gaugeCoolantTemp.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);
@@ -139,7 +151,7 @@ screenViewBase::screenViewBase()
     gaugeOilTemp.setPosition(95, 255, 266, 188);
     gaugeOilTemp.setCenter(133, 143);
     gaugeOilTemp.setStartEndAngle(-80.6f, 81.3f);
-    gaugeOilTemp.setRange(0, 100);
+    gaugeOilTemp.setRange(0, 1000);
     gaugeOilTemp.setValue(0);
     gaugeOilTemp.setNeedle(BITMAP_NEEDLE_SMALL_10_SHUTTERSTOCK_2529382583_ID, 21, 127);
     gaugeOilTemp.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);
@@ -151,19 +163,31 @@ screenViewBase::screenViewBase()
     gaugeOilPress.setPosition(1569, 57, 306, 190);
     gaugeOilPress.setCenter(153, 153);
     gaugeOilPress.setStartEndAngle(-80.6f, 81.3f);
-    gaugeOilPress.setRange(0, 100);
+    gaugeOilPress.setRange(0, 1000);
     gaugeOilPress.setValue(0);
     gaugeOilPress.setNeedle(BITMAP_NEEDLE_SMALL_10_SHUTTERSTOCK_2529382583_ID, 21, 127);
     gaugeOilPress.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);
     gaugeOilPress.setSteadyNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);
     add(gaugeOilPress);
 
+    gaugeAFR.setBackground(touchgfx::Bitmap(BITMAP_AFR_REL_10_ID));
+    gaugeAFR.setBackgroundOffset(20, 18);
+    gaugeAFR.setPosition(45, 57, 306, 190);
+    gaugeAFR.setCenter(153, 153);
+    gaugeAFR.setStartEndAngle(-80.6f, 81.3f);
+    gaugeAFR.setRange(0, 1000);
+    gaugeAFR.setValue(0);
+    gaugeAFR.setNeedle(BITMAP_NEEDLE_SMALL_10_SHUTTERSTOCK_2529382583_ID, 21, 127);
+    gaugeAFR.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);
+    gaugeAFR.setSteadyNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);
+    add(gaugeAFR);
+
     gaugeTachometer.setBackground(touchgfx::Bitmap(BITMAP_TACH_SHUTTERSTOCK_2529382583_ID));
     gaugeTachometer.setBackgroundOffset(0, 20);
     gaugeTachometer.setPosition(400, 207, 540, 440);
     gaugeTachometer.setCenter(270, 290);
     gaugeTachometer.setStartEndAngle(-119.7f, 120.3f);
-    gaugeTachometer.setRange(0, 100);
+    gaugeTachometer.setRange(0, 1000);
     gaugeTachometer.setValue(0);
     gaugeTachometer.setNeedle(BITMAP_NEEDLE_BIG_SHUTTERSTOCK_2529382583_ID, 42, 252);
     gaugeTachometer.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::NEAREST_NEIGHBOR);

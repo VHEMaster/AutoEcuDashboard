@@ -25,15 +25,16 @@ void screenView::functionGaugeUpdate()
   float progress2 = (sinf(HAL_GetTick() / 1234.0f * 3.1415) + 1.0f) * 0.5f;
   float progress3 = (sinf(HAL_GetTick() / 600.0f * 3.1415) + 1.0f) * 0.5f;
 
-  gaugeTachometer.setValue(progress * 100.0f);
+  gaugeTachometer.setValue(progress * 1000.0f);
 
-  gaugeSpeedMeter.setValue(progress2 * 100.0f);
+  gaugeSpeedMeter.setValue(progress2 * 1000.0f);
 
-  gaugeCoolantTemp.setValue(progress3 * 100.0f);
-  gaugeOilTemp.setValue(progress3 * 100.0f);
-  gaugeFuelLevel.setValue(progress3 * 100.0f);
-  gaugeOilPress.setValue(progress3 * 100.0f);
-  gaugeManifoldPressure.setValue(progress3 * 100.0f);
+  gaugeCoolantTemp.setValue(progress3 * 1000.0f);
+  gaugeOilTemp.setValue(progress3 * 1000.0f);
+  gaugeFuelLevel.setValue(progress3 * 1000.0f);
+  gaugeOilPress.setValue(progress3 * 1000.0f);
+  gaugeManifoldPressure.setValue(progress3 * 1000.0f);
+  gaugeAFR.setValue(progress3 * 1000.0f);
 
 
   static uint32_t tick_last = 0;

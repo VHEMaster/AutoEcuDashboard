@@ -37,6 +37,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
+    touchgfx::Image imageTurbo;
     touchgfx::Image imageShiftUp;
     touchgfx::Image imageTraction;
     touchgfx::Image imageABS;
@@ -52,7 +53,9 @@ protected:
     touchgfx::Image imageBatteryCharge;
     touchgfx::Image imageCheckEngine;
     touchgfx::Image imageOilTemp;
+    touchgfx::Image imageOilTempHigh;
     touchgfx::Image imageCoolantTemp;
+    touchgfx::Image imageCoolantTempHigh;
     touchgfx::TextAreaWithOneWildcard textFPS;
     touchgfx::Gauge gaugeManifoldPressure;
     touchgfx::Gauge gaugeSpeedMeter;
@@ -60,6 +63,7 @@ protected:
     touchgfx::Gauge gaugeCoolantTemp;
     touchgfx::Gauge gaugeOilTemp;
     touchgfx::Gauge gaugeOilPress;
+    touchgfx::Gauge gaugeAFR;
     touchgfx::Gauge gaugeTachometer;
 
     /*
