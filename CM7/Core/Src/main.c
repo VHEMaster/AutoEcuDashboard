@@ -46,10 +46,10 @@
 
 #define  HSYNC             (30) //30
 #define  HBP               (60) //30
-#define  HFP               (128) //90
+#define  HFP               (144) //90
 #define  VSYNC             (2) //2
-#define  VBP               (32) //4
-#define  VFP               (24) //2
+#define  VBP               (48) //4
+#define  VFP               (36) //2
 
 #define WIDTH   1920
 #define HEIGHT  720
@@ -101,17 +101,10 @@ SDRAM_HandleTypeDef hsdram2;
 
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
-osThreadId_t videoTaskHandle;
 osThreadId_t touchgfxTaskHandle;
 
 const osThreadAttr_t defaultTask_attributes = {
   .name = "Task_Default",
-  .stack_size = 3072 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
-};
-
-const osThreadAttr_t videoTask_attributes = {
-  .name = "Task_Video",
   .stack_size = 3072 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
@@ -154,8 +147,6 @@ static void MX_TIM5_Init(void);
 static void MX_TIM8_Init(void);
 static void MX_TIM14_Init(void);
 void StartDefaultTask(void *argument);
-
-extern void videoTaskFunc(void *argument);
 
 /* USER CODE BEGIN PFP */
 volatile uint8_t i2c_flag = 0;
@@ -422,7 +413,6 @@ Error_Handler();
   /* Create the thread(s) */
   /* creation of defaultTask */
   touchgfxTaskHandle = osThreadNew(TouchGFX_Task, NULL, &touchgfxTask_attributes);
-  videoTaskHandle = osThreadNew(videoTaskFunc, NULL, &videoTask_attributes);;
 
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
