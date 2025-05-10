@@ -51,7 +51,7 @@ MEMORY
   RAM_D3 (rw)   : ORIGIN = 0x38000000, LENGTH = 64K
   SDRAM_B1 (rw)  : ORIGIN = 0xC0000000, LENGTH = 64M
   SDRAM_B2 (rw)  : ORIGIN = 0xD0000000, LENGTH = 64M
-  QSPI (rx)      : ORIGIN = 0x90000000, LENGTH = 4M
+  QSPI (rx)      : ORIGIN = 0x90000000, LENGTH = 16M
 }
 
 /* Sections */
@@ -80,7 +80,7 @@ SECTIONS
 
   __tgfx_extflash_loadaddr = LOADADDR(TouchGfxExternalSection);
   
-	TouchGfxExternalSection :
+	TouchGfxExternalSection (NOLOAD) :
 	{
     . = ALIGN(0x4);
 		__tgfx_extflash_start = .;

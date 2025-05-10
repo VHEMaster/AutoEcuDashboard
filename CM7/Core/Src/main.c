@@ -981,7 +981,7 @@ static void MX_QUADSPI_Init(void)
   hqspi.Init.ClockPrescaler = 0;
   hqspi.Init.FifoThreshold = 4;
   hqspi.Init.SampleShifting = QSPI_SAMPLE_SHIFTING_NONE;
-  hqspi.Init.FlashSize = 22-1;
+  hqspi.Init.FlashSize = 24-1;
   hqspi.Init.ChipSelectHighTime = QSPI_CS_HIGH_TIME_1_CYCLE;
   hqspi.Init.ClockMode = QSPI_CLOCK_MODE_0;
   hqspi.Init.FlashID = QSPI_FLASH_ID_1;
@@ -1042,7 +1042,7 @@ static void MX_QUADSPI_Init(void)
   hqspi_cmd.Address = 0x00;
   hqspi_cmd.AddressSize = QSPI_ADDRESS_24_BITS;
   hqspi_cmd.AddressMode = QSPI_ADDRESS_4_LINES;
-  hqspi_cmd.DummyCycles = 6;
+  hqspi_cmd.DummyCycles = 2;
   hqspi_cmd.DataMode = QSPI_DATA_4_LINES;
   hqspi_cmd.NbData = 0;
 

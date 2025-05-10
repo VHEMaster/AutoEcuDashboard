@@ -222,7 +222,7 @@ screenViewBase::screenViewBase()
     textOilTempValue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_A0B8));
     add(textOilTempValue);
 
-    textOilTempTitle.setPosition(75, 412, 306, 52);
+    textOilTempTitle.setPosition(75, 412, 306, 36);
     textOilTempTitle.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textOilTempTitle.setLinespacing(0);
     textOilTempTitle.setTypedText(touchgfx::TypedText(T___SINGLEUSE_5S57));
@@ -250,7 +250,7 @@ screenViewBase::screenViewBase()
     textOilPressureValue.setTypedText(touchgfx::TypedText(T___SINGLEUSE_76NL));
     add(textOilPressureValue);
 
-    textOilPressureTitle.setPosition(1539, 412, 306, 52);
+    textOilPressureTitle.setPosition(1539, 412, 306, 37);
     textOilPressureTitle.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textOilPressureTitle.setLinespacing(0);
     textOilPressureTitle.setTypedText(touchgfx::TypedText(T___SINGLEUSE_DU81));
